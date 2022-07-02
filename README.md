@@ -1,11 +1,7 @@
-## Image Classification for a City Dog Show
-### Project Goal
-#### Improving your programming skills using Python.
-In this project, you will use a created image classifier to identify dog breeds. We ask you to focus on Python and not on the actual classifier.
+### AI Programming with Python Nanodegree program projects
+#### Description
+This repo contains 2 projects done while undertaking this nanodegree with udacity.
 
-#### Description:
-Your city is hosting a citywide dog show and you have volunteered to help the organizing committee with contestant registration. Every participant that registers must submit an image of their dog along with biographical information about their dog. The registration system tags the images based upon the biographical information.
+1.Dog Images classification using pytorch and pretrained model architectures,alexnet,resnet and vgg.
 
-Some people are planning on registering pets that aren’t actual dogs.
-
-You need to use an already developed Python classifier to make sure the participants are dogs.
+2. Building my own image classifier.
