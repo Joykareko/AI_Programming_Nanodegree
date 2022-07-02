@@ -77,4 +77,4 @@ INCORRECT Dog/NOT Dog Assignments:
 Real:                        dog   Classifier:                        cuirass
 Real:                        dog   Classifier:                        cuirass
 
-** Total Elapsed Runtime: 0:59:59
+** Total Elapsed Runtime: 0:0:0

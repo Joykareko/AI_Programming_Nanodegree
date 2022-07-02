@@ -77,4 +77,4 @@ INCORRECT Dog Breed Assignment:
 Real:                        dog   Classifier:                     rottweiler
 Real:                        dog   Classifier:                     rottweiler
 
-** Total Elapsed Runtime: 0:59:59
+** Total Elapsed Runtime: 0:0:0

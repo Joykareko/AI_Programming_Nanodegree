@@ -52,28 +52,30 @@ def get_pet_labels(image_dir):
     
     for idx in range(0,len(filename),1):
         
-        pet_image = filename[idx].lower().split('_')
+        if not filename[idx][0].startswith('.'): #skips files starting with 0
         
-        # Create pet_name starting as empty string
-        pet_name = ""
+            pet_image = filename[idx].lower().split('_')
 
-        # Loops to check if word in pet name is only
-        # alphabetic characters - if true append word
-        # to pet_name separated by trailing space 
-        for word in pet_image:
-            if word.isalpha():
-                pet_name += word + " "
+            # Create pet_name starting as empty string
+            pet_name = ""
 
-        # Strip off starting/trailing whitespace characters 
-        pet_name = pet_name.strip()
+            # Loops to check if word in pet name is only
+            # alphabetic characters - if true append word
+            # to pet_name separated by trailing space 
+            for word in pet_image:
+                if word.isalpha():
+                    pet_name += word + " "
 
-        # Prints resulting pet_name
-        #print("\nFilename=", pet_image, "   Label=", pet_name)
-        if filename[idx] not in results_dic:
-              results_dic[filename[idx]] = [pet_name]
-              
-        else:
-              print("** Warning: Duplicate files exist in directory:", 
-                     filename[idx])
-        #print("Filename=", key, "   Pet Label=", results_dic[value])
+            # Strip off starting/trailing whitespace characters 
+            pet_name = pet_name.strip()
+
+            # Prints resulting pet_name
+            #print("\nFilename=", pet_image, "   Label=", pet_name)
+            if filename[idx] not in results_dic:
+                  results_dic[filename[idx]] = [pet_name]
+
+            else:
+                  print("** Warning: Duplicate files exist in directory:", 
+                         filename[idx])
+            #print("Filename=", key, "   Pet Label=", results_dic[value])
     return results_dic

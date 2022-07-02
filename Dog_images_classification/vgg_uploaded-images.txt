@@ -77,4 +77,4 @@ INCORRECT Dog/NOT Dog Assignments:
 Real:                        dog   Classifier:                           mask
 Real:                        dog   Classifier:                           mask
 
-** Total Elapsed Runtime: 0:59:56
+** Total Elapsed Runtime: 0:0:3
